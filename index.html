@@ -11,7 +11,7 @@
 <body>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script type="text/javascript" src="app.js"></script>
+        <script type="text/javascript" src="assets\javascript\app.js"></script>
 
         <div class="container">
 
@@ -19,7 +19,7 @@
                 Totally True/False Trivia!
             </section>
 
-            <section id="timer-display">
+            <section id="timerDisplay">
                 <h2>00:30</h2>
             </section>
 
@@ -31,20 +31,29 @@
 
             <section id="questions">
 
+                <div id="oneStatus">
+                    <h3>NOT ANSWERED</h3>
+                </div>
                 <p id="questionOne">
-                    A pound of sand weighs more than a pound of feathers.
+                    1. A pound of sand weighs more than a pound of feathers.
                 </p>
                 <button id="oneTrue">True</button>
                 <button id="oneFalse">False</button>
 
+                <div id="twoStatus">
+                    <h3>NOT ANSWERED</h3>
+                </div>
                 <p id="questionTwo">
-                    
+                    2. It is better to be feared than loved.
                 </p>
                 <button id="twoTrue">True</button>
                 <button id="twoFalse">False</button>
 
+                <div id="threeStatus">
+                    <h3>NOT ANSWERED</h3>
+                </div>
                 <p id="questionThree">
-                    This sentence is true.
+                    3. This sentence is true.
                 </p>
                 <button id="threeTrue">True</button>
                 <button id="threeFalse">False</button>

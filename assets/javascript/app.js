@@ -1,39 +1,42 @@
 window.onload = function() {
-    $("#lap").on("click", stopwatch.recordLap);
-    $("#stop").on("click", stopwatch.stop);
-    $("#reset").on("click", stopwatch.reset);
-    $("#start").on("click", stopwatch.start);
-  };
 
-// global variables
-var intervalId;
-var clockRunning = false;
-var time;
+    // global variables
+    var intervalId;
+    var clockRunning = false;
+    var time = 30;
 
-$("#startButton").on("click", start);
+    $("#startButton").on("click", start);
 
 
 
 
 
-function start () {
-    clearInterval(intervalId);
-}
+    function start () {
+        clearInterval(intervalId);
+        intervalId = setInterval(decrement, 1000);
+    }
 
-function decrement () {
+    function decrement () {
 
-    number-=1;
+        time-=1;
 
-    $("#timerDisplay").html("<h2>" + number + "</h2>");
-}
+        $("#timerDisplay").html("<h2>" + "00:" + time + "</h2>");
 
-function stop () {
-    clearInterval(intervalId);
-}
+        if (time === 0) {
+            stop();
+            $("#announcements").html("<h2>" + "Time's up!" + "</h2>");
+        }
+
+    }
+
+    function stop () {
+        clearInterval(intervalId);
+    }
 
 
 
-function constructQuestion () {
+    function constructQuestion () {
 
-}
+    }
 
+};
