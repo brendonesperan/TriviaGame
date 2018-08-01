@@ -1,0 +1,17 @@
+body {
+    text-align: center;
+    background-color: rgb(224, 202, 103);
+}
+
+#title {
+    font-size: 60px;
+    color: palevioletred;
+}
+
+#timerDisplay {
+    font-size: 40px;
+}
+
+.status {
+    color: blue;
+}

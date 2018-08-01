@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Trivia Game</title>
+    <!-- <link rel="stylesheet" href="assets/css/reset.css"> -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 
 <body>
@@ -16,45 +19,45 @@
         <div class="container">
 
             <section id="title">
-                <h1>Totally True/False Trivia!</h1>
+                <h1>True/False Triplet Trivia!</h1>
             </section>
 
             <section id="timerDisplay">
-                <h2>30 seconds left!</h2>
+                <h2>You have 20 seconds.</h2>
             </section>
 
             <section id="announcements">
-                <h2>Click to begin!</h2>
+                <h2>Click to begin.</h2>
             </section>
 
-            <button id="startButton">Start!</button>
+            <button id="startButton">Begin!</button>
 
             <section id="questions">
 
-                <div id="oneStatus" data=0>
+                <p id="questionOne">
+                    1.
+                </p>
+                <div class="status" id="oneStatus" data=0>
                     <h3>NOT ANSWERED</h3>
                 </div>
-                <p id="questionOne">
-                    1. A pound of sand weighs more than a pound of feathers.
-                </p>
                 <button id="oneTrue">True</button>
                 <button id="oneFalse">False</button>
 
-                <div id="twoStatus" data=0>
+                <p id="questionTwo">
+                    2.
+                </p>
+                <div class="status" id="twoStatus" data=0>
                     <h3>NOT ANSWERED</h3>
                 </div>
-                <p id="questionTwo">
-                    2. In Switzerland, it is illegal to own only a single guinea pig.
-                </p>
                 <button id="twoTrue">True</button>
                 <button id="twoFalse">False</button>
 
-                <div id="threeStatus" data=0>
+                <p id="questionThree">
+                    3.
+                </p>
+                <div class="status" id="threeStatus" data=0>
                     <h3>NOT ANSWERED</h3>
                 </div>
-                <p id="questionThree">
-                    3. Theodore Roosevelt once owned a pet hyena.
-                </p>
                 <button id="threeTrue">True</button>
                 <button id="threeFalse">False</button>
     

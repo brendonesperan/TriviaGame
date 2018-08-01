@@ -3,7 +3,7 @@ window.onload = function() {
     // global variables
     var intervalId;
     var clockRunning = false;
-    var time = 5;
+    var time = 20;
     var gameOver = false;
 
     $("#startButton").on("click", start);
@@ -40,6 +40,10 @@ window.onload = function() {
     function start () {
         if(!gameOver) {
             clearInterval(intervalId);
+            $("#announcements").html("<h2>" + "Good luck!" + "</h2>");
+            $("#questionOne").text("1. A pound of sand weighs more than a pound of feathers.");
+            $("#questionTwo").text("2. In Switzerland, it is illegal to own only a single guinea pig.");
+            $("#questionThree").text("3. Theodore Roosevelt once owned a pet hyena.");
             intervalId = setInterval(decrement, 1000);
         }
     }
@@ -56,15 +60,12 @@ window.onload = function() {
             $("#announcements").html("<h2>" + "Time's up!" + "</h2>");
 
             if ($("#oneStatus").attr("data") === "0") {
-                console.log("status check works");
                 $("#oneStatus").html("<h3>" + "TOO SLOW" + "</h3>")
             }
             if ($("#twoStatus").attr("data") === "0") {
-                console.log("status check works");
                 $("#twoStatus").html("<h3>" + "TOO SLOW" + "</h3>")
             }
             if ($("#threeStatus").attr("data") === "0") {
-                console.log("status check works");
                 $("#threeStatus").html("<h3>" + "TOO SLOW" + "</h3>")
             }
         }
